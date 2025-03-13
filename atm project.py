@@ -80,8 +80,6 @@ while True:
                 print(f"Name: {accounts[accno][0]}")
                 print(f"Account number: {accno}")
                 dob = accounts[accno][1].split("-")
-
-                
                 date = dob[0]
                 month = dobm[int(dob[1])]
                 year = dod[2]
