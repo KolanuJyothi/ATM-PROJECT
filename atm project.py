@@ -34,7 +34,7 @@ while True:
                     if amt > accounts[accno][-2]:
                         print("Insufficient Funds ")
                     else:
-                         print("Withdraw Successful !")
+                         print("Withdraw Successfull !")
                          accounts[accno][-2] -= amt
              print(accounts[accno])
         print("*********************")
@@ -55,7 +55,7 @@ while True:
         if accno not in accounts:
             print("Account Does not Exists")
         else:
-            if accounts[accono][-1] == None:
+            if accounts[accno][-1] == None:
                 pin=int(input("Enter Pin: "))
                 cpin=int(input("confirm pin: "))
                 if pin != cpin:
@@ -78,7 +78,7 @@ while True:
                 print("Invalid pin")
             else:
                 print(f"Name: {accounts[accno][0]}")
-                print(f"Account number: [accono]")
+                print(f"Account number: {accno}")
                 dob = accounts[accno][1].split("-")
 
                 
@@ -87,7 +87,7 @@ while True:
                 year = dod[2]
                 dob = date + "-" + month + "-" + year
                 print(f"Date of Birth: {dob}")
-                print(f"Account Balance: (accounts[accno][-2]")
+                print(f"Account Balance: {accounts[accno][-2]}")
                 
         print("*******************")  
                 
