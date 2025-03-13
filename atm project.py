@@ -44,15 +44,15 @@ while True:
         if accno not in accounts:
             print("Account does not exit")
         else: 
-            amt=int(input("Enter Account to depasit: "))
+            amt=int(input("Enter Account to deposit: "))
             accounts[accono][-2] += amt
-            print("DepositebSuccesfull")
+            print("Deposit Succesfull")
             print(accounts[accono])
         print("******************")
     elif option ==3:
         print("********************")
         account=int(input("Enter Account Number: "))
-        if accono not in accounts:
+        if accno not in accounts:
             print("Account Does not Exists")
         else:
             if accounts[accono][-1] == None:
@@ -69,7 +69,7 @@ while True:
         print("************************")
     elif option ==4:
         print("**********************")
-        accono = int(input("Enter Account Name: "))
+        accno = int(input("Enter Account Name: "))
         if accno not in accounts:
             print("Account Does not Exits")
         else:
@@ -77,7 +77,7 @@ while True:
             if pin != accounts[accno][-1]:
                 print("Invalid pin")
             else:
-                print(f"Name: (accounts[accno][0]")
+                print(f"Name: {accounts[accno][0]}")
                 print(f"Account number: [accono]")
                 dob = accounts[accno][1].split("-")
 
@@ -85,8 +85,8 @@ while True:
                 date = dob[0]
                 month = dobm[int(dob[1])]
                 year = dod[2]
-                dob = date + "-" + month + "=" + year
-                print(f"Date of Birth: (dob)")
+                dob = date + "-" + month + "-" + year
+                print(f"Date of Birth: {dob}")
                 print(f"Account Balance: (accounts[accno][-2]")
                 
         print("*******************")  
