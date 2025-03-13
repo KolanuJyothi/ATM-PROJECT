@@ -85,16 +85,8 @@ while True:
                 year = dod[2]
                 dob = date + "-" + month + "-" + year
                 print(f"Date of Birth: {dob}")
-                print(f"Account Balance: {accounts[accno][-2]}")
-                
-        print("*******************")  
-                
-    elif option == 2:
-        print("Deposit")
-    elif option == 3:
-        print("Pin Generator")
-    elif option == 4:
-        print("Mini statement")
+                print(f"Account Balance: {accounts[accno][-2]}") 
+        print("*******************")
     else:
          break
      
